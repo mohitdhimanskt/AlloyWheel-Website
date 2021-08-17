@@ -5,7 +5,7 @@
         <ul class="uk-navbar-nav">
           <li class="uk-active">
             <router-link tag="a" class="navbar-brand" to="/" exact
-              >Bike Renting</router-link
+              >AlloyWheels</router-link
             >
           </li>
           <!-- <li><router-link  tag="a" class="navbar-brand" to="page" exact>About us </router-link></li>
