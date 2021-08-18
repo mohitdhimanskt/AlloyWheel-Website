@@ -4,7 +4,7 @@ const { parseMultipartData, sanitizeEntity } = require('strapi-utils');
  * Read the documentation (https://strapi.io/documentation/v3.x/concepts/controllers.html#core-controllers)
  * to customize this controller
  */
-const stripe = require('stripe')(process.env.STRIPE_KEY)
+const stripe = require('stripe')(process.env.sk_test_51IgTE6SEtraFFPFEOWiZ2oMZcksbag4It9XDeV62kdeg4qoEH8Kl0SSSksaiNwP20sa5UwhCQQ4BhCtVyp8yMlN000cM3djDLS)
 const MY_DOMAIN = 'http://localhost:3000/cart';
 module.exports = {
     async create(ctx) {
