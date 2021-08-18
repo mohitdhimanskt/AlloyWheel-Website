@@ -12,6 +12,7 @@
     "@nuxtjs/strapi": "^0.3.1",
     "@stripe/stripe-js": "^1.17.0",
     "core-js": "^3.15.1",
+    "nodemailer": "^6.6.3",
     "nuxt": "^2.15.7",
     "set-getter": "^0.1.1",
     "stripe": "^8.169.0",

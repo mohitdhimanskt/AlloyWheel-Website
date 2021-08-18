@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeroSection></HeroSection>
+    <!-- <HeroSection></HeroSection>
     <Nav class="sticky top-0" ></Nav>
     <div class="sm:w-11/12 md:w-4/5 mx-auto">
       <h1 class="m-5 font-bold text-lg">Featured Products</h1>
@@ -8,7 +8,7 @@
     </div>
     <Ads class="mx-auto sm:m-10" ></Ads>
     <NewsLetter class="mx-auto" ></NewsLetter>
-    <Footer ></Footer>
+    <Footer ></Footer> -->
   </div>
 </template>
 <script>
