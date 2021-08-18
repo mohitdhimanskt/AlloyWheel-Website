@@ -14,8 +14,8 @@ module.exports = {
                 let transporter = nodemailer.createTransport({
                     service: "gmail",
                     auth: {
-                        user: <your_email/>,
-                        pass: <your_password/>,
+                        user: your_email,
+                        pass: your_password,
                     }
                 })
                 const mailOptions = {

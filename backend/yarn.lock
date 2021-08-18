@@ -1415,7 +1415,7 @@
     "@types/bson" "*"
     "@types/node" "*"
 
-"@types/node@*":
+"@types/node@*", "@types/node@>=8.1.0":
   version "16.6.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.6.1.tgz#aee62c7b966f55fc66c7b6dfa1d58db2a616da61"
   integrity sha512-Sr7BhXEAer9xyGuCN3Ek9eg9xPviCF2gfu9kTfuU2HkTVAMYSDeX40fvpmo72n5nansg3nsBjuQBrsS28r+NUw==
@@ -7741,7 +7741,7 @@ purest@3.1.0:
     "@request/api" "^0.6.0"
     extend "^3.0.0"
 
-qs@6.10.1, qs@^6.10.1, qs@^6.4.0, qs@^6.9.4, qs@^6.9.6:
+qs@6.10.1, qs@^6.10.1, qs@^6.4.0, qs@^6.6.0, qs@^6.9.4, qs@^6.9.6:
   version "6.10.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.10.1.tgz#4931482fa8d647a5aab799c5271d2133b981fb6a"
   integrity sha512-M528Hph6wsSVOBiYUnGf+K/7w0hNshs/duGsNXPUCLH5XAqjEtiPGwNONLV0tBH8NoGb0mvD5JubnUTrujKDTg==
@@ -9890,6 +9890,14 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
+
+stripe@^8.169.0:
+  version "8.169.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-8.169.0.tgz#5970cc055872fccbc49713f6428a682ece7f3e76"
+  integrity sha512-h4JVMGnhYwkEu8dFHX0MewtTFEWcjJQ2zTiFcvhW5toa/2JcEeObfwH27Z29A6t/6s2vnXrXxEnuyL7gBBAXqA==
+  dependencies:
+    "@types/node" ">=8.1.0"
+    qs "^6.6.0"
 
 style-loader@^0.23.1:
   version "0.23.1"
