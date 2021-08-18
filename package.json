@@ -16,6 +16,7 @@
     "nuxt": "^2.15.7",
     "set-getter": "^0.1.1",
     "stripe": "^8.169.0",
+    "tailwindcss": "^2.2.7",
     "vue-swal": "^1.0.0"
   },
   "devDependencies": {}
