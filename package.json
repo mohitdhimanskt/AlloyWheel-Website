@@ -17,7 +17,8 @@
     "set-getter": "^0.1.1",
     "stripe": "^8.169.0",
     "tailwindcss": "^2.2.7",
-    "vue-swal": "^1.0.0"
+    "vue-swal": "^1.0.0",
+    "vuejs": "^3.0.1"
   },
   "devDependencies": {}
 }
