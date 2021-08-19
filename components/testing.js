@@ -3,9 +3,9 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     target: "static",
-    env: {
-      strapiBaseUri
-    },
+  env: {
+    strapiBaseUri,
+  },
     title: "frontend",
     htmlAttrs: {
       lang: "en"
@@ -23,7 +23,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["~/plugins/vue-swal"],
+  plugins: ['~/plugins/vue-swal'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -31,7 +31,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    "@nuxtjs/eslint-module"
+    '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     // '@nuxtjs/tailwindcss',
   ],
@@ -45,27 +45,25 @@ export default {
     entities: ["products", "orders", "subscribers"]
   },
   axios: {
-    baseURL: process.env.API_AUTH_URL || "http://localhost:1337"
+    baseURL: process.env.API_AUTH_URL || 'http://localhost:1337'
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    /*
-     ** Run ESLint on save
-     */
-    extend(config, ctx) {
-      if (ctx.dev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: "pre",
-          exclude: /node_modules/,
-          test: /\.(js|vue)$/,
-          loader: "eslint-loader",
-          exclude: /(node_modules)/
-        });
-      }
-    },
-    /*
-     ** Add vue-swal
-     */
-    vendor: ["vue-swal"]
-  }
+  build: {  /*
+    ** Run ESLint on save
+    */
+   extend(config, ctx) {
+     if (ctx.dev && ctx.isClient) {
+       config.module.rules.push({
+         enforce: 'pre',
+         exclude: /node_modules/,
+         test: /\.(js|vue)$/,
+         loader: 'eslint-loader',
+         exclude: /(node_modules)/,
+       })
+     }
+   },
+   /*
+    ** Add vue-swal
+    */
+   vendor: ['vue-swal'],}
 };

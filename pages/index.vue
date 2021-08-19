@@ -1,36 +1,36 @@
 <template>
   <div>
     <HeroSection></HeroSection>
-    <Nav class="sticky top-0" ></Nav>
+    <Nav class="sticky top-0"></Nav>
     <div class="sm:w-11/12 md:w-4/5 mx-auto">
       <h1 class="m-5 font-bold text-lg">Featured Products</h1>
-      <Featured class="mx-auto" :data="featuredProducts" ></Featured>
+      <Featured class="mx-auto" :data="featuredProducts"></Featured>
     </div>
-    <Ads class="mx-auto sm:m-10" ></Ads>
-    <NewsLetter class="mx-auto" ></NewsLetter>
-    <Footer ></Footer>
+    <Ads class="mx-auto sm:m-10"></Ads>
+    <NewsLetter class="mx-auto"></NewsLetter>
+    <Footer></Footer>
   </div>
 </template>
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters } from "vuex";
 export default {
   async asyncData({ $strapi, store, error }) {
     try {
-      const response = await $strapi.$products.find({ featured: true })
-      store.commit('setFeaturedProducts', response)
+      const response = await $strapi.$products.find({ featured: true });
+      store.commit("setFeaturedProducts", response);
     } catch (e) {
-      error(e)
+      error(e);
     }
   },
   data() {
     return {
-      featuredProds: [],
-    }
+      featuredProds: []
+    };
   },
   computed: {
-    ...mapGetters(['featuredProducts']),
-  },
-}
+    ...mapGetters(["featuredProducts"])
+  }
+};
 </script>
 <style scoped>
 /* Sample `apply` at-rules with Tailwind CSS
